@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class AppController {
 
 	
-	@RequestMapping(path="/", method=RequestMethod.GET)
+	@RequestMapping(path="/home", method=RequestMethod.GET)
 	public String displayHomePage() {
 		return "home";
 	}
