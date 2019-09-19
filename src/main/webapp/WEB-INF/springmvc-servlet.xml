@@ -17,13 +17,14 @@
 
 	<!-- This configuration tells Spring to scan (i.e. search) the com.techelevator
 		 package and look for any classes that need to be managed (e.g. Controllers) -->
-    <context:component-scan base-package="src/main/java/"/>
+    <context:component-scan base-package="controller"/>
 
 	<!-- ********************** -->
     <!--  WEB MVC CONFIGURATION -->
     <!-- ********************** -->
 
 	<mvc:annotation-driven />
+	<mvc:default-servlet-handler/>
 
 	<!-- This view resolver contains logic for translating a logical view name 
 		(e.g. "homePage") into a JSP file path (e.g. "/WEB-INF/jsp/homePage.jsp") -->
