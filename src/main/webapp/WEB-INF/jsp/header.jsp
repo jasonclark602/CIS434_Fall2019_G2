@@ -11,10 +11,39 @@
 	    <script src="https://cdn.jsdelivr.net/jquery.timeago/1.4.1/jquery.timeago.min.js"></script>
 	    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	    
-	    <c:url var="cssHref" value="/site.css" />
+	    <c:url var="cssHref" value="./css/site.css" />
 		<link rel="stylesheet" type="text/css" href="${cssHref}">
 		
+	<style>
+		ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
 
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+	
+	
+	
+	
+	</style>
 		
 	</head>
 	<body>
@@ -25,7 +54,7 @@
 		</header>
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
-				<ul class="nav navbar-nav">
+				<ul>
 					<c:url var="homePageHref" value="/" />
 					<li><a href="${homePageHref}">Home</a></li>
 					<c:url var="guitarPage" value="/guitar" />
