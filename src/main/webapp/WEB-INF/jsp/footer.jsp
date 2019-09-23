@@ -1,7 +1,7 @@
 		</div>
 		
 		<footer>
-			Copyright 2016 Critter Inc.
+			Jason Clark and Emery Buchan
 		</footer>
 	</body>
 </html>
