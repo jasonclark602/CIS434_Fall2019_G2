@@ -41,8 +41,6 @@ li a:hover {
 }
 	
 	
-	
-	
 	</style>
 		
 	</head>
