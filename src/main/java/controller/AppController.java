@@ -15,6 +15,9 @@ public class AppController {
 	
 	@RequestMapping(path = {"/chordResult"}, method=RequestMethod.GET)
 	public String getGuitarShape(ModelMap modelHolder, @RequestParam String chordName) {
+		if(chordName.equals(null) || chordName.equals("")) {
+			chordName = "Ebm";
+		}
 		Chord chord = new Chord(chordName);
 		modelHolder.put("chord", chord);
 		return "guitar";
@@ -22,6 +25,9 @@ public class AppController {
 	
 	@RequestMapping(path = {"/chordResultPiano"}, method=RequestMethod.GET)
 	public String getPianoShape(ModelMap modelHolder, @RequestParam String chordName) {
+		if(chordName.equals(null) || chordName.equals("")) {
+			chordName = "Ebm";
+		}
 		Chord chord = new Chord(chordName);
 		modelHolder.put("chord", chord);
 		return "piano";
@@ -39,7 +45,7 @@ public class AppController {
 	}
 	
 	@RequestMapping(path= {"/tuner"}, method=RequestMethod.GET)
-	public String displayUkePage() {
+	public String displayTunerPage() {
 		return "tuner";
 	}
 }

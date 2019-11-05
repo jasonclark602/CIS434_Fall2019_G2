@@ -1,5 +1,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -14,43 +16,28 @@
 
 
 	    <script async type="text/javascript" src="https://www.scales-chords.com/api/scales-chords-api.js"></script>
-	    <c:url var="cssHref" value="/site.css" />
-		<link rel="stylesheet" type="text/css" href="${cssHref}">
-		
-	<style>
-		ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
+	    <c:url var="cssHref" value="css/site.css" />
+		<link rel="stylesheet" type="text/css" href="${cssHref }">
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
-	
-	
-	</style>
 		
 	</head>
 	<body>
 		<header>
-			
-			<img src="placeholder.png" class="img-responsive" />
+	
+	<div class = "headerRow">	
+		<div class = "headerColumnGuitar">
+			<img src="img/Guitar2.png" id= "guitarImg" class="img-responsive" />
+		
+		</div>
+		<div class = "headerColumnNotes" >
+			<img src="img/MusicalNotes.png" id = "notesImg" class="img-responsive"/>
+		</div>
+		
+			<div class = "headerColumnPiano">
+			<img src="img/Piano.png" id= "pianoImg" class="img-responsive" />
+		
+		</div>
+	</div>
 		</header>
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">

@@ -14,10 +14,22 @@
 			</div>
 			<button type="submit" class="btn btn-default">Get Chord</button>
 		</form>
-		<c:if test="${chord.name != null || chord.name == '' }">
-		<ins class="scales_chords_api" chord="${chord.name}" ></ins>
-		<ins class="scales_chords_api" chord="${chord.name }" output="sound"></ins>
-		</c:if>
+		
+		<div id = "guitarChord">
+			<c:choose>
+			
+			<c:when test="${chord.name != null || chord.name == '' }">
+				<ins class="scales_chords_api" chord="${chord.name}" width="75%;" height="25%;" ></ins>
+				<ins class="scales_chords_api" chord="${chord.name }" output="sound"></ins>
+			</c:when>
+			
+			<c:otherwise>
+		
+			</c:otherwise>
+			
+			</c:choose>
+		</div>
+		
 
 <c:import url="/WEB-INF/jsp/footer.jsp" />
 
