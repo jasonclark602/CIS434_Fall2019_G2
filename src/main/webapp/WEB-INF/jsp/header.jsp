@@ -16,8 +16,15 @@
 
 
 	    <script async type="text/javascript" src="https://www.scales-chords.com/api/scales-chords-api.js"></script>
+	    <!-- from a free CDN -->
+<script src="https://cdn.rawgit.com/citronneur/onlinetuner.co/master/js/onlinetuner.min.js"></script>
+
+<!-- From a local copy -->
+<script src="onlinetunner.min.js"></script>
 	    <c:url var="cssHref" value="css/site.css" />
 		<link rel="stylesheet" type="text/css" href="${cssHref }">
+		
+		
 
 		
 	</head>

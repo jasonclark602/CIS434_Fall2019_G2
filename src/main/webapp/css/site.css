@@ -82,4 +82,62 @@ li a:hover {
 }
 	
 	
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
+}
+h1 {
+  font-weight: 400;
+}
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  text-align: center;
+}
+.tuner {
+  border: 3px solid #2c3e50;
+  border-radius: 8px;
+  max-width: 500px;
+  padding: 12px;
+}
+.row {
+  margin: 14px 0;
+}
+select,
+button {
+  font-size: 18px;
+  padding: 12px;
+}
+.btn {
+  background: #3498db;
+  border: 3px solid #999;
+  border-radius: 4px;
+  color: #fff;
+  margin: 4px;
+  transition: background 0.2s ease;
+}
+.btn:disabled {
+  opacity: 0.7;
+}
+.btn:hover:not(:disabled) {
+  background: #2980b9;
+  cursor: pointer;
+}
+.btn.active {
+  border: 3px solid #e74c3c;
+}
+#stop,
+#tuning-select {
+  width: 100%;
+}
+footer {
+  margin-top: 14px;
+}
+a,
+a:visited {
+  color: #3498db;
+  text-decoration: none;
+}
+	
 	
